@@ -9,6 +9,7 @@
 - POJO Classes - Plain old java objects ( Getters and setters ) aka Serialization and deserialization.
 - RequestSpecification and ResponseSpecification.
 - Parameterization - @Test(DataProvider = "<method name>")
+- RequestLoggingFilter and ResponseLoggingFilter with FileOutputStream and PrintStream
 
 ### Notable Classes:
 
