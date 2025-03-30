@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import java.io.FileNotFoundException;
+
 import org.junit.Assert;
 
 import Utils.utils;
@@ -16,6 +18,9 @@ import io.restassured.specification.ResponseSpecification;
 import resources.TestDataBuilders;
 
 public class apiValidationStepsDefs extends utils {
+    public apiValidationStepsDefs() throws FileNotFoundException {
+        super();
+    }
 
     RequestSpecification res;
     ResponseSpecification resspec;
@@ -25,16 +30,17 @@ public class apiValidationStepsDefs extends utils {
     @Given("^I have a addPlace payload$")
     public void i_have_a_add_place_payload() {
 
-        resspec = new ResponseSpecBuilder()
-            .expectStatusCode(200)
-            .expectContentType(ContentType.JSON)
-            .build();
-
         res = given().spec(requestSpecification()).body(data.addPlacePayload());
     }
 
     @When("^I call the \"(.*)\" with POST http request$")
     public void i_call_the_with_post_http_request(String apiName) {
+
+        resspec = new ResponseSpecBuilder()
+            .expectStatusCode(200)
+            .expectContentType(ContentType.JSON)
+            .build();
+
         response = res.when()
             .post("/maps/api/place/add/json")
             .then()
