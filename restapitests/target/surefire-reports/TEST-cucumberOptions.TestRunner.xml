@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="cucumberOptions.TestRunner" time="0.578" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Automation\Mobile Java Repo\Rest API Placeholder\restapitests\target\test-classes;C:\Automation\Mobile Java Repo\Rest API Placeholder\restapitests\target\classes;C:\Users\imsaa\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\imsaa\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\imsaa\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\imsaa\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\imsaa\.m2\repository\io\rest-assured\rest-assured\5.5.1\rest-assured-5.5.1.jar;C:\Users\imsaa\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\imsaa\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\imsaa\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\imsaa\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\imsaa\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\imsaa\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\imsaa\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\imsaa\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\imsaa\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\imsaa\.m2\repository\io\rest-assured\json-path\5.5.1\json-path-5.5.1.jar;C:\Users\imsaa\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\imsaa\.m2\repository\io\rest-assured\rest-assured-common\5.5.1\rest-assured-common-5.5.1.jar;C:\Users\imsaa\.m2\repository\io\rest-assured\xml-path\5.5.1\xml-path-5.5.1.jar;C:\Users\imsaa\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\imsaa\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\imsaa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Automation\Java SDK\bin"/>
+    <property name="sun.java.command" value="C:\Users\imsaa\AppData\Local\Temp\surefire14174611595733074934\surefirebooter-20250330213638028_3.jar C:\Users\imsaa\AppData\Local\Temp\surefire14174611595733074934 2025-03-30T21-36-37_901-jvmRun1 surefire-20250330213638028_1tmp surefire_0-20250330213638028_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Automation\Mobile Java Repo\Rest API Placeholder\restapitests\target\test-classes;C:\Automation\Mobile Java Repo\Rest API Placeholder\restapitests\target\classes;C:\Users\imsaa\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\imsaa\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\imsaa\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;C:\Users\imsaa\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;C:\Users\imsaa\.m2\repository\io\rest-assured\rest-assured\5.5.1\rest-assured-5.5.1.jar;C:\Users\imsaa\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;C:\Users\imsaa\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;C:\Users\imsaa\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\imsaa\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\imsaa\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\imsaa\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\imsaa\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\imsaa\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\imsaa\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\imsaa\.m2\repository\io\rest-assured\json-path\5.5.1\json-path-5.5.1.jar;C:\Users\imsaa\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;C:\Users\imsaa\.m2\repository\io\rest-assured\rest-assured-common\5.5.1\rest-assured-common-5.5.1.jar;C:\Users\imsaa\.m2\repository\io\rest-assured\xml-path\5.5.1\xml-path-5.5.1.jar;C:\Users\imsaa\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;C:\Users\imsaa\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\imsaa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;C:\Users\imsaa\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;C:\Users\imsaa\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\imsaa"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="C:\Automation\Java SDK"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Automation\Mobile Java Repo\Rest API Placeholder\restapitests"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\imsaa\AppData\Local\Temp\surefire14174611595733074934\surefirebooter-20250330213638028_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.5+9-LTS-239"/>
+    <property name="user.name" value="imsaa"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\imsaa\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\imsaa\AppData\Local\Temp\"/>
+    <property name="java.version" value="21.0.5"/>
+    <property name="user.dir" value="C:\Automation\Mobile Java Repo\Rest API Placeholder\restapitests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Automation\Java SDK\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;c:\Automation\cursor\resources\app\bin;C:\Program Files\Google\Chrome\Application;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Automation\NodeJS\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Users\imsaa\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python36\;C:\Users\imsaa\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python37\;C:\Users\imsaa\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python39\;C:\Users\imsaa\anaconda3;C:\Users\imsaa\anaconda3\Library\mingw-w64\bin;C:\Users\imsaa\anaconda3\Library\usr\bin;C:\Users\imsaa\anaconda3\Library\b;C:\Automation\Git\cmd;\Users\imsaa\AppData\Local\Android\Sdk\platform-tools;C:\Automation\Maven\apache-maven-3.9.9\bin;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\imsaa\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python36\;C:\Users\imsaa\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python37\;C:\Users\imsaa\anaconda3;C:\Users\imsaa\anaconda3\Library\mingw-w64\bin;C:\Users\imsaa\anaconda3\Library\usr\bin;C:\Users\imsaa\anaconda3\Library\bin;C:\Users\imsaa\anaconda3\Scripts;C:\Users\imsaa\AppData\Local\Microsoft\WindowsApps;C:\Users\imsaa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\imsaa\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Automation\cursor\resources\app\bin;C:\Users\imsaa\AppData\Local\gitkraken\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.5+9-LTS-239"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="Validate the addPlace workflow using AddPlaceAPI" classname="API Validations" time="0.119">
+    <system-out><![CDATA[
+Scenario: Validate the addPlace workflow using AddPlaceAPI # src/test/java/features/apiValidations.feature:3
+  Given I have a addPlace payload                          # stepDefinitions.apiValidationStepsDefs.i_have_a_add_place_payload()
+  When I call the "AddPlaceAPI" with POST http request     # stepDefinitions.apiValidationStepsDefs.i_call_the_add_place_api_with_post_http_request()
+  Then I check the "scope" should be "APP"                 # stepDefinitions.apiValidationStepsDefs.i_check_the_scope_should_be_app()
+  And I check the "status" should be "OK"                  # stepDefinitions.apiValidationStepsDefs.i_check_the_status_should_be_ok()
+]]></system-out>
+  </testcase>
+</testsuite>

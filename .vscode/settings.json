@@ -1,0 +1,25 @@
+{
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "cucumber.glue": [
+        "stepDefinitions"
+    ],
+    "cucumber.features": [
+        "src/test/java/features"
+    ],
+    "java.test.config": {
+        "vmargs": [
+            "-ea"
+        ]
+    },
+    "cucumberautocomplete.steps": [
+        "restapitests/src/test/java/stepDefinitions/*.java"
+    ],
+    "cucumberautocomplete.syncfeatures": "restapitests/src/test/java/features/*.feature",
+    "cucumberautocomplete.skipDocStrings": true,
+    "cucumberautocomplete.customParameters": [
+        {
+            "parameter": "{int}",
+            "value": "\\d+"
+        }
+    ]
+}

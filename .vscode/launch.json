@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run Cucumber Tests",
+            "request": "launch",
+            "mainClass": "org.junit.runner.JUnitCore",
+            "args": [
+                "cucumberOptions.TestRunner"
+            ],
+            "projectName": "restapitests"
+        }
+    ]
+} 

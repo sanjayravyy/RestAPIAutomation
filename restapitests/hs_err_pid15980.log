@@ -1,0 +1,233 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 266338304 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3600), pid=15980, tid=15404
+#
+# JRE version:  (21.0.5+9) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (21.0.5+9-LTS-239, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -ea -XX:+ShowCodeDetailsInExceptionMessages -Dfile.encoding=UTF-8 org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 52743 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -testNameFile C:\Users\imsaa\AppData\Local\Temp\testNames3307597339805413161.txt
+
+Host: Intel(R) Core(TM) i7-10750H CPU @ 2.60GHz, 12 cores, 15G,  Windows 11 , 64 bit Build 26100 (10.0.26100.5514)
+Time: Sun Mar 30 23:08:05 2025 India Standard Time elapsed time: 1.050895 seconds (0d 0h 0m 1s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000028de9015740):  JavaThread "Unknown thread" [_thread_in_vm, id=15404, stack(0x000000c8a9600000,0x000000c8a9700000) (1024K)]
+
+Stack: [0x000000c8a9600000,0x000000c8a9700000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6ca289]
+V  [jvm.dll+0x854a51]
+V  [jvm.dll+0x856f7e]
+V  [jvm.dll+0x857653]
+V  [jvm.dll+0x27dd26]
+V  [jvm.dll+0x6c6a25]
+V  [jvm.dll+0x6bb5aa]
+V  [jvm.dll+0x35359a]
+V  [jvm.dll+0x35b1f6]
+V  [jvm.dll+0x3adade]
+V  [jvm.dll+0x3add88]
+V  [jvm.dll+0x3278fc]
+V  [jvm.dll+0x32845b]
+V  [jvm.dll+0x81de19]
+V  [jvm.dll+0x3ba7c1]
+V  [jvm.dll+0x807168]
+V  [jvm.dll+0x44f96e]
+V  [jvm.dll+0x451561]
+C  [jli.dll+0x52a3]
+C  [ucrtbase.dll+0x37b0]
+C  [KERNEL32.DLL+0x2e8d7]
+C  [ntdll.dll+0x9c5dc]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffa10ccac08, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x0000028de90758a0 WorkerThread "GC Thread#0"                     [id=21188, stack(0x000000c8a9700000,0x000000c8a9800000) (1024K)]
+  0x0000028de9086cf0 ConcurrentGCThread "G1 Main Marker"            [id=16044, stack(0x000000c8a9800000,0x000000c8a9900000) (1024K)]
+  0x0000028de9088580 WorkerThread "G1 Conc#0"                       [id=13792, stack(0x000000c8a9900000,0x000000c8a9a00000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffa1043a087]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffa10d3bf98] Heap_lock - owner thread: 0x0000028de9015740
+
+Heap address: 0x0000000702a00000, size: 4054 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 4 size 8 Array Of Cards #cards 16 size 48 Howl #buckets 8 coarsen threshold 3686 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 4096
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x0000000702a00000, 0x0000000800000000)
+  region size 2048K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffa10823259]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.008 Loaded shared library C:\Automation\Java SDK\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6c12c0000 - 0x00007ff6c12d0000 	C:\Automation\Java SDK\bin\java.exe
+0x00007ffac49a0000 - 0x00007ffac4c06000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffac3eb0000 - 0x00007ffac3f77000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffac1f80000 - 0x00007ffac234b000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffac2350000 - 0x00007ffac249b000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffaa9870000 - 0x00007ffaa988b000 	C:\Automation\Java SDK\bin\VCRUNTIME140.dll
+0x00007ffaaf500000 - 0x00007ffaaf519000 	C:\Automation\Java SDK\bin\jli.dll
+0x00007ffac2830000 - 0x00007ffac28e2000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffac4840000 - 0x00007ffac48e9000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffac3c10000 - 0x00007ffac3cb6000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffac4690000 - 0x00007ffac47a5000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffac3ce0000 - 0x00007ffac3eac000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffac2750000 - 0x00007ffac2777000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffaa70b0000 - 0x00007ffaa7347000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.5516_none_3e073f78e335730c\COMCTL32.dll
+0x00007ffac35c0000 - 0x00007ffac35eb000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffac1c10000 - 0x00007ffac1d41000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffac1d50000 - 0x00007ffac1df3000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffab7270000 - 0x00007ffab727b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffac44b0000 - 0x00007ffac44df000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffaa9510000 - 0x00007ffaa951c000 	C:\Automation\Java SDK\bin\vcruntime140_1.dll
+0x00007ffa73250000 - 0x00007ffa732de000 	C:\Automation\Java SDK\bin\msvcp140.dll
+0x00007ffa10100000 - 0x00007ffa10e18000 	C:\Automation\Java SDK\bin\server\jvm.dll
+0x00007ffac30b0000 - 0x00007ffac3124000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffac0810000 - 0x00007ffac086e000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ffab0800000 - 0x00007ffab0836000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffac07f0000 - 0x00007ffac0804000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ffac0ab0000 - 0x00007ffac0aca000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffaa8d20000 - 0x00007ffaa8d2a000 	C:\Automation\Java SDK\bin\jimage.dll
+0x00007ffabf320000 - 0x00007ffabf561000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ffac3870000 - 0x00007ffac3bf3000 	C:\WINDOWS\System32\combase.dll
+0x00007ffac42b0000 - 0x00007ffac4386000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffab9660000 - 0x00007ffab9699000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ffac2620000 - 0x00007ffac26b9000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffaa9230000 - 0x00007ffaa924f000 	C:\Automation\Java SDK\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Automation\Java SDK\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.5516_none_3e073f78e335730c;C:\Automation\Java SDK\bin\server
+
+VM Arguments:
+jvm_args: -ea -XX:+ShowCodeDetailsInExceptionMessages -Dfile.encoding=UTF-8 
+java_command: org.eclipse.jdt.internal.junit.runner.RemoteTestRunner -version 3 -port 52743 -testLoaderClass org.eclipse.jdt.internal.junit4.runner.JUnit4TestLoader -loaderpluginname org.eclipse.jdt.junit4.runtime -testNameFile C:\Users\imsaa\AppData\Local\Temp\testNames3307597339805413161.txt
+java_class_path (initial): c:\Automation\Mobile Java Repo\Rest API Placeholder\restapitests\target\test-classes;c:\Automation\Mobile Java Repo\Rest API Placeholder\restapitests\target\classes;c:\Users\imsaa\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;c:\Users\imsaa\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;c:\Users\imsaa\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;c:\Users\imsaa\.m2\repository\io\cucumber\cucumber-java\6.10.4\cucumber-java-6.10.4.jar;c:\Users\imsaa\.m2\repository\org\apiguardian\apiguardian-api\1.1.1\apiguardian-api-1.1.1.jar;c:\Users\imsaa\.m2\repository\io\rest-assured\rest-assured\5.5.1\rest-assured-5.5.1.jar;c:\Users\imsaa\.m2\repository\org\apache\groovy\groovy\4.0.22\groovy-4.0.22.jar;c:\Users\imsaa\.m2\repository\org\apache\groovy\groovy-xml\4.0.22\groovy-xml-4.0.22.jar;c:\Users\imsaa\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;c:\Users\imsaa\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;c:\Users\imsaa\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;c:\Users\imsaa\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;c:\Users\imsaa\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;c:\Users\imsaa\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;c:\Users\imsaa\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;c:\Users\imsaa\.m2\repository\io\rest-assured\json-path\5.5.1\json-path-5.5.1.jar;c:\Users\imsaa\.m2\repository\org\apache\groovy\groovy-json\4.0.22\groovy-json-4.0.22.jar;c:\Users\imsaa\.m2\repository\io\rest-assured\rest-assured-common\5.5.1\rest-assured-common-5.5.1.jar;c:\Users\imsaa\.m2\repository\io\rest-assured\xml-path\5.5.1\xml-path-5.5.1.jar;c:\Users\imsaa\.m2\repository\org\apache\commons\commons-lang3\3.16.0\commons-lang3-3.16.0.jar;c:\Users\imsaa\.m2\repository\io\cucumber\cucumber-junit\6.10.4\cucumber-junit-6.10.4.jar;c:\Users\imsaa\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;c:\Users\imsaa\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;c:\Users\imsaa\.m2\repository\org\codehaus\groovy\groovy\3.0.24\groovy-3.0.24.jar;c:\Users\imsaa\.m2\repository\io\cucumber\cucumber-core\6.10.4\cucumber-core-6.10.4.jar;c:\Users\imsaa\.m2\repository\io\cucumber\cucumber-gherkin\6.10.4\cucumber-gherkin-6.10.4.jar;c:\Users\imsaa\.m2\repository\io\cucumber\cucumber-gherkin-messages\6.10.4\cucumber-gherkin-messages-6.10.4.jar;c:\Users\imsaa\.m2\repository\io\cucumber\messages\15.0.0\messages-15.0.0.jar;c:\Users\imsaa\.m2\repository\io\cucumber\tag-expressions\3.0.1\tag-expressions-3.0.1.jar;c:\Users\imsaa\.m2\repository\io\cucumber\cucumber-expressions\10.3.0\cucumber-expressions-10.3.0.jar;c:\Users\imsaa\.m2\repository\io\cucumber\datatable\3.5.0\datatable-3.5.0.jar;c:\Users\imsaa\.m2\repository\io\cucumber\cucumber-plugin\6.10.4\cucumber-plugin-6.10.4.jar;c:\Users\imsaa\.m2\repository\io\cucumber\docstring\6.10.4\docstring-6.10.4.jar;c:\Users\imsaa\.m2\repository\io\cucumber\html-formatter\13.0.0\html-formatter-13.0.0.jar;c:\Users\imsaa\.m2\repository\io\cucumber\create-meta\4.0.0\create-meta-4.0.0.jar;c:\Users\imsaa\AppData\Roaming\Cursor\User\globalStorage\redhat.java\1.41.0\config_win\org.eclipse.osgi\113\0\.cp;c:\Users\imsaa\AppData\Roaming\Cursor\User\globalStorage\redhat.java\1.41.0\config_win\org.eclipse.osgi\56\0\.cp
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 266338304                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4250927104                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool ShowCodeDetailsInExceptionMessages       = true                                   {manageable} {command line}
+   size_t SoftMaxHeapSize                          = 4250927104                             {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=C:\Automation\Java SDK
+PATH=c:\Automation\cursor\resources\app\bin;C:\Program Files\Google\Chrome\Application;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Automation\NodeJS\;C:\Program Files\NVIDIA Corporation\NVIDIA app\NvDLISR;C:\Users\imsaa\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python36\;C:\Users\imsaa\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python37\;C:\Users\imsaa\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python39\;C:\Users\imsaa\anaconda3;C:\Users\imsaa\anaconda3\Library\mingw-w64\bin;C:\Users\imsaa\anaconda3\Library\usr\bin;C:\Users\imsaa\anaconda3\Library\b;C:\Automation\Git\cmd;\Users\imsaa\AppData\Local\Android\Sdk\platform-tools;C:\Automation\Maven\apache-maven-3.9.9\bin;;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;%SYSTEMROOT%\System32\OpenSSH\;C:\Users\imsaa\AppData\Local\Programs\Python\Python36\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python36\;C:\Users\imsaa\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\imsaa\AppData\Local\Programs\Python\Python37\;C:\Users\imsaa\anaconda3;C:\Users\imsaa\anaconda3\Library\mingw-w64\bin;C:\Users\imsaa\anaconda3\Library\usr\bin;C:\Users\imsaa\anaconda3\Library\bin;C:\Users\imsaa\anaconda3\Scripts;C:\Users\imsaa\AppData\Local\Microsoft\WindowsApps;C:\Users\imsaa\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\imsaa\AppData\Roaming\npm;C:\Program Files\Azure Data Studio\bin;C:\Automation\cursor\resources\app\bin;C:\Users\imsaa\AppData\Local\gitkraken\bin;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;
+USERNAME=imsaa
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
+TMP=C:\Users\imsaa\AppData\Local\Temp
+TEMP=C:\Users\imsaa\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.5514)
+OS uptime: 0 days 8:37 hours
+
+CPU: total 12 (initial active 12) (6 cores per cpu, 2 threads per core) family 6 model 165 stepping 2 microcode 0xea, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, fma, vzeroupper, clflush, clflushopt, rdtscp, f16c, pku
+Processor Information for all 12 processors :
+  Max Mhz: 2592, Current Mhz: 2592, Mhz Limit: 2592
+
+Memory: 4k page, system-wide physical 16215M (4872M free)
+TotalPageFile size 16215M (AvailPageFile size 254M)
+current process WorkingSet (physical memory assigned to process): 13M, peak: 13M
+current process commit charge ("private bytes"): 64M, peak: 319M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (21.0.5+9-LTS-239) for windows-amd64 JRE (21.0.5+9-LTS-239), built on 2024-09-30T05:17:38Z by "mach5one" with MS VC++ 17.6 (VS2022)
+
+END.
