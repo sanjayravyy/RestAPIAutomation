@@ -1,6 +1,7 @@
 package stepDefinitions;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import org.junit.Assert;
 
@@ -28,7 +29,7 @@ public class apiValidationStepsDefs extends utils {
     TestDataBuilders data = new TestDataBuilders();
 
     @Given("^I have a addPlace payload$")
-    public void i_have_a_add_place_payload() {
+    public void i_have_a_add_place_payload() throws IOException {
 
         res = given().spec(requestSpecification()).body(data.addPlacePayload());
     }
